@@ -92,7 +92,7 @@ The `context` is used to provide access to a database which is used to load the 
 Notice that while the resolver function needs to be aware of Promises, the GraphQL query does not. It simply expects the `human` field to return something which it can then ask the `name` of. During execution, GraphQL will wait for Promises, Futures, and Tasks to complete before continuing and will do so with optimal concurrency.
 
 
-## Trivial resolvers
+## Type field resolvers
 
 Now that a `Human` object is available, GraphQL execution can continue with the fields requested on it.
 
